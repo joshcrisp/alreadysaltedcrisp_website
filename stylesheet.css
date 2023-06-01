@@ -91,3 +91,9 @@ main img {
     from {scale:1;}
     to {scale: 1.1;}
 }
+
+.imageoverflow {
+    overflow: hidden;
+    height: 400px;
+}
+
