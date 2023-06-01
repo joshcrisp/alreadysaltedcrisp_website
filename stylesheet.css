@@ -1,1 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+* {
+    font-family: Poppins;
+}
+
+nav {
+    background-color:wheat;
+    padding: 20px;
+}
+
+body {
+    background-color: wheat;
+}
+
+nav button {
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: medium;
+    text-align: center;
+    color: gray;
+    opacity: 0.5;
+    background-color: wheat;
+    margin: 0 15px;
+}
+
+nav button:hover {
+    color: black;
+    opacity: 1;
+}
+
+.socialnav {
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+}
+
+.socialnav img {
+    height: 30px;
+    width: 30px;
+    padding: 15px 5px;
+}
+
+.navcontainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+main {
+ text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+.current {
+    color: black;
+    opacity: 1;
+}
+
+main img {
+    height: 400px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    max-width: fit-content;
+}
+
+.imagecontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.parent img:hover {
+    animation: imgfocus 1000ms forwards;
+}
+
+@keyframes imgfocus {
+    from {scale:1;}
+    to {scale: 1.1;}
+}
